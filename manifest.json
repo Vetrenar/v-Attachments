@@ -1,0 +1,9 @@
+{
+	"id": "v-attachments",
+	"name": "v-Attachments",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Automatically rename and organize attachments based on the active note. Features extension-based rules, flexible folder patterns, and options to move files or keep them in their original location.",
+	"author": "Vetrenar",
+	"isDesktopOnly": false
+}

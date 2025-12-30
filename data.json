@@ -1,0 +1,50 @@
+{
+  "scopeMode": "include",
+  "watchedPaths": [
+    "translations"
+  ],
+  "defaultNamePattern": "${filename}-${index}",
+  "defaultPathPattern": "./attachments",
+  "enableAutoRename": true,
+  "debounceDelay": 1000,
+  "rules": [
+    {
+      "id": "default-image",
+      "label": "Images",
+      "extensions": [
+        "png",
+        "jpg",
+        "jpeg",
+        "gif",
+        "webp"
+      ],
+      "namePattern": "${filename}-${index}",
+      "pathPattern": "./assets",
+      "locationMode": "original"
+    },
+    {
+      "id": "default-pdf",
+      "label": "PDFs",
+      "extensions": [
+        "pdf"
+      ],
+      "namePattern": "pdfwwwwww-${filename}",
+      "pathPattern": "Documents/Attachments",
+      "locationMode": "pattern"
+    }
+  ],
+  "renameAllAttachments": true,
+  "separator": " ",
+  "imageFormat": "avif",
+  "imageQuality": 0.6,
+  "dataUrlTemplate": ">[!NOTE] Capture\n> ![]({{dataUrl}})\n> [[{{sourceLink}}|Source]]",
+  "savedFileTemplate": "![[{{savedPath}}]]\n> From [[{{sourceLink}}]]",
+  "captureAction": "paste",
+  "captureMode": "selection",
+  "saveToVault": false,
+  "saveFolder": "Attachments",
+  "filenameTemplate": "PDF-{{sourceFileName}}-p{{pageNumber}}-{{ts}}.webp",
+  "dateFormat": "YYYYMMDD-HHmmss",
+  "transparentBackground": false,
+  "outputFormat": ">[!NOTE] Capture\n> ![]({{dataUrl}})\n> [[{{sourceLink}}|Source]]"
+}
